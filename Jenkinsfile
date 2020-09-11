@@ -21,7 +21,7 @@ pipeline{
         }
         stage('deploy'){
             steps{
-                sh 'docker run -d -p 8000:8000 aboodyessam/django:1.0'
+                sh 'docker run -d -p 8069:8000 aboodyessam/django:1.0'
             }
         }
     }
