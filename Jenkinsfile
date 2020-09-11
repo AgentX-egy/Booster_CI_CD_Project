@@ -8,7 +8,7 @@ pipeline{
         }
         stage('build image'){
             steps{
-                sh 'docker build -f dockerfile -t django:1.0b .'
+                sh 'docker build -f dockerfile -t aboodyessam/django:1.0b .'
             }
         }
         stage('push image'){
